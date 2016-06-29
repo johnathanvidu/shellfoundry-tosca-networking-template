@@ -1,0 +1,25 @@
+# An example of an NXOS Switch Shell
+tosca_definitions_version: tosca_simple_yaml_1_0
+
+description: >
+  {{cookiecutter.project_short_description}}
+
+imports:
+  - cloudshell_standard: cloudshell_networking_standard.yaml
+
+node_types:
+
+  vendor.switch.NXOS:
+    derived_from: cloudshell.nodes.Switch
+    properties:
+      device_owner:
+        type: string
+    interfaces:      
+      notify_device_owner: {}
+    artifacts:
+      icon:
+        file: {{cookiecutter.project_slug}}.png
+        type: tosca.artifacts.File
+      driver:
+        file: {{cookiecutter.project_slug}}.zip
+        type: tosca.artifacts.File
