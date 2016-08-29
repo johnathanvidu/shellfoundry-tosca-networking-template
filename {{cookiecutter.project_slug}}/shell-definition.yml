@@ -1,7 +1,7 @@
 tosca_definitions_version: tosca_simple_yaml_1_0
 
 metadata:
-  template_name: {{cookiecutter.project_slug}}
+  template_name: {{cookiecutter.shell_name}}
   template_author: {{cookiecutter.full_name}}
   template_version: {{cookiecutter.version}}
 
@@ -13,7 +13,7 @@ imports:
 
 node_types:
 
-  vendor.switch.{{cookiecutter.project_slug}}:
+  vendor.switch.{{cookiecutter.shell_name}}:
     derived_from: cloudshell.nodes.Switch
     artifacts:
       icon:
