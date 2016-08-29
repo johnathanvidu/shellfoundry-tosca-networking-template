@@ -13,7 +13,7 @@ imports:
 
 node_types:
 
-  vendor.switch.{{cookiecutter.shell_name}}:
+  vendor.switch.{{cookiecutter.model_name}}:
     derived_from: cloudshell.nodes.Switch
     artifacts:
       icon:
