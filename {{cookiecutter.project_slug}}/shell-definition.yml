@@ -1,4 +1,3 @@
-# An example of an NXOS Switch Shell
 tosca_definitions_version: tosca_simple_yaml_1_0
 
 metadata:
@@ -7,26 +6,18 @@ metadata:
   template_version: {{cookiecutter.version}}
 
 description: >
- This is an example of a shell implementation
-  1) It declares following the 'NetworkDevice' standard
-  2) It associates the NXOS shell to the standard 'Switch' family
-  3) It expands the standard capabilities with additional property and additional function
+ Sample TOSCA based shell
 
 imports:
   - cloudshell_standard: cloudshell_networking_standard.yaml
 
 node_types:
 
-  vendor.switch.NXOS:
+  vendor.switch.{{cookiecutter.project_slug}}:
     derived_from: cloudshell.nodes.Switch
-    properties:
-      device_owner:
-        type: string
-    interfaces:      
-      notify_device_owner: {}
     artifacts:
       icon:
-        file: {{cookiecutter.project_slug}}.png
+        file: shell_icon.png
         type: tosca.artifacts.File
       driver:
         file: {{cookiecutter.project_slug}}.zip
