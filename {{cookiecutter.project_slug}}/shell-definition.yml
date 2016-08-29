@@ -17,7 +17,7 @@ node_types:
     derived_from: cloudshell.nodes.Switch
     artifacts:
       icon:
-        file: shell_icon.png
+        file: shell-icon.png
         type: tosca.artifacts.File
       driver:
         file: {{cookiecutter.project_slug}}.zip
