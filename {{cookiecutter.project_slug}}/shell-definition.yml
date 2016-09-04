@@ -22,3 +22,10 @@ node_types:
       driver:
         file: {{ cookiecutter.driver_name }}.zip
         type: tosca.artifacts.File
+    capabilities:
+      auto_discovery_capability:
+        type: cloudshell.capabilities.AutoDiscovery
+        properties:
+          enable_auto_discovery:
+            type: boolean
+            default: false
