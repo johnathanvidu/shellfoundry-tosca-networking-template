@@ -15,6 +15,16 @@ node_types:
 
   vendor.switch.{{cookiecutter.model_name}}:
     derived_from: cloudshell.nodes.Switch
+    #properties:
+    #  speed: 
+    #    # Type is mandatory, Possible values: string, integer, float, boolean, timestamp
+    #    type: string
+    #    required: false
+    #    default: fast
+    #    constraints:
+    #      - valid_values: [fast, slow]
+    #    # Tags are translated to Rules. If not specified: [configuration, setting]
+    #    tags: [configuration, setting, not_searchable, abstract_filter, include_in_insight, readonly_to_users, display_in_diagram, connection_attribute, read_only]
     artifacts:
       icon:
         file: shell-icon.png
