@@ -9,7 +9,7 @@ description: >
  Sample TOSCA based shell
 
 imports:
-  - cloudshell_standard: cloudshell_networking_standard.yaml
+  - cloudshell_standard: cloudshell_networking_standard_4_0_1.yaml
 
 node_types:
 
@@ -17,7 +17,7 @@ node_types:
     derived_from: cloudshell.nodes.Switch
     #properties:
     #  speed: 
-    #    # Type is mandatory, Possible values: string, integer, float, boolean, timestamp
+    #    # Type is mandatory, Possible values: string, integer, float, boolean, cloudshell.datatypes.Password
     #    type: string
     #    required: false
     #    default: fast
@@ -38,4 +38,7 @@ node_types:
         properties:
           enable_auto_discovery:
             type: boolean
-            default: false
+            default: true
+          auto_discovery_description:
+            type: string
+            default: Describe the auto discovery
