@@ -14,7 +14,7 @@ imports:
 node_types:
 
   vendor.switch.{{cookiecutter.model_name}}:
-    derived_from: cloudshell.nodes.Switch
+    derived_from: cloudshell.nodes.{{ cookiecutter.family_name }}
     #properties:
     #  speed: 
     #    # Type is mandatory, Possible values: string, integer, float, boolean, cloudshell.datatypes.Password
