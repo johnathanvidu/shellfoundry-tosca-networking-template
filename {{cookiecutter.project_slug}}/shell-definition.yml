@@ -43,3 +43,6 @@ node_types:
           auto_discovery_description:
             type: string
             default: Describe the auto discovery
+          inventory_description:
+            type: string
+            default: Describe the resource shell template
