@@ -4,6 +4,7 @@ metadata:
   template_name: {{cookiecutter.model_name}}
   template_author: {{cookiecutter.full_name}}
   template_version: {{cookiecutter.version}}
+  template_icon: shell-icon.png
 
 description: >
  Sample TOSCA based shell
