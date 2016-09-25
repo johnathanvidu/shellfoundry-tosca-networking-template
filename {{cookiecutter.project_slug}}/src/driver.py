@@ -1,6 +1,8 @@
 from cloudshell.shell.core.resource_driver_interface import ResourceDriverInterface
 from cloudshell.shell.core.driver_context import InitCommandContext, ResourceCommandContext, AutoLoadResource, \
     AutoLoadAttribute, AutoLoadDetails, AutoLoadCommandContext
+# run 'shellfoundry generate' to generate data model classes
+from data_model import *
 
 
 class {{cookiecutter.driver_name}} (ResourceDriverInterface):
