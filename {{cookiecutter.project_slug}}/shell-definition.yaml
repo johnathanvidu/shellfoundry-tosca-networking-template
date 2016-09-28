@@ -22,6 +22,7 @@ node_types:
     #    type: string
     #    required: false
     #    default: fast
+    #    description: Some attribute description
     #    constraints:
     #      - valid_values: [fast, slow]
     #    # Tags are translated to Rules. If not specified: [configuration, setting]
