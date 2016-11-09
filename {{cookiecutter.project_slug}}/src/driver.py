@@ -217,20 +217,17 @@ class {{cookiecutter.driver_name}} (ResourceDriverInterface):
         resource.model = 'specify the shell model'
 
         # Example of a shell with chassis->module->port
-        chassis1 = GenericChassis()
-        chassis1.name = 'Chassis 1'
+        chassis1 = GenericChassis('Chassis 1')
         chassis1.model = 'WS-X4232-GB-RJ'
         chassis1.serial_number = 'JAE053002JD'
         resource.add_sub_resource('1', chassis1)
 
-        module1 = GenericModule()
-        module1.name = 'Module 1'
+        module1 = GenericModule('Module 1')
         module1.model = 'WS-X5561-GB-AB'
         module1.serial_number = 'TGA053972JD'
         chassis1.add_sub_resource('1', module1)
 
-        port1 = GenericPort()
-        port1.name = 'Port 1'
+        port1 = GenericPort('Port 1')
         port1.mac_address = 'fe80::e10c:f055:f7f1:bb7t16'
         port1.ipv4_address = '192.168.10.7'
         module1.add_sub_resource('1', port1)
